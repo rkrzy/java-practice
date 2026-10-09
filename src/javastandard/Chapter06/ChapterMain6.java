@@ -97,6 +97,16 @@ public class ChapterMain6 {
         Data d3 = copy(d2);
         System.out.println("d2.x = " + d2.x);
         System.out.println("d3.x = " + d3.x);
+
+        System.out.println("============");
+        MyMath3 mm3 = new MyMath3();
+        System.out.println(mm3.add(3,3));
+        System.out.println(mm3.add(3,3L));
+        System.out.println(mm3.add(3L,3));
+        System.out.println(mm3.add(3L,3L));
+
+        int [] a = {100, 200, 300};
+        System.out.println(mm3.add(a));
     }
 
 
@@ -170,5 +180,6 @@ public class ChapterMain6 {
         if(n <= 1) return 1;
         return n * factorial(n-1);
     }
+
 
 }
